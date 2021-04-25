@@ -63,14 +63,43 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/dtbo
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/dtb
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
+# SHRP Flags
+SHRP_PATH := device/samsung/m21nsxx
+SHRP_MAINTAINER := soulr344
+SHRP_DEVICE_CODE := m21nsxx
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
+SHRP_FONP_2 := 
+SHRP_FONP_3 := 
+SHRP_FLASH_MAX_BRIGHTNESS := 1
+SHRP_REC := /dev/block/by-name/recovery
+SHRP_AB := false
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_Only
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+SHRP_EXPRESS := true
+SHRP_OFFICIAL := true
+SHRP_DARK := true
+SHRP_ALT_REBOOT := true
+TW_EXCLUDE_NANO := true
+
 PLATFORM_SECURITY_PATCH := 2021-04-01
 
 BOARD_KERNEL_IMAGE_NAME := Image
 
 # Dynamic Partition handling flags
 
-IGNORE_UPDATE_LOGICAL_PARTITION_ERROR := true # Makes twrp ignore "unable to update logical partition" error
-ALLOW_LOGICAL_PARTITION_WIPE := true # lets the dynamic partitions be wipable/resizable in twrp > wipe
+# Makes twrp ignore "unable to update logical partition" error
+IGNORE_UPDATE_LOGICAL_PARTITION_ERROR := true
+
+# lets the dynamic partitions be wipable/resizable in twrp > wipe
+ALLOW_LOGICAL_PARTITION_WIPE := true
 
 # these dynamic partitions will get mounted as rw
 BOARD_RW_DYNAMIC_PARTITIONS_LIST := \
