@@ -1,5 +1,5 @@
 # Platform
-DEVICE_PATH := device/samsung/m21nsxx
+DEVICE_PATH := device/samsung/m31nsxx
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOARD_PLATFORM_GPU := mali-g72
@@ -64,9 +64,9 @@ BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/dtb
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # SHRP Flags
-SHRP_PATH := device/samsung/m21nsxx
+SHRP_PATH := device/samsung/m31nsxx
 SHRP_MAINTAINER := soulr344
-SHRP_DEVICE_CODE := m21nsxx
+SHRP_DEVICE_CODE := m31nsxx
 SHRP_EDL_MODE := 0
 SHRP_EXTERNAL := /external_sd
 SHRP_INTERNAL := /sdcard
