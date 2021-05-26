@@ -92,6 +92,8 @@ TW_USE_SAMSUNG_HAPTICS := true
 
 PLATFORM_SECURITY_PATCH := 2021-05-01
 
+PLATFORM_VERSION := 11
+
 BOARD_KERNEL_IMAGE_NAME := Image
 
 # Dynamic Partition handling flags
